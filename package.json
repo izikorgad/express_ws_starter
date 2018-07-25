@@ -1,0 +1,26 @@
+{
+  "name": "express_ws_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon --inspect . --exec babel-node",
+    "server": "node --inspect ./dist/index.js",
+    "build": "npm run lint && babel server -d dist",
+    "lint": "eslint . --ignore-path config/.eslintignore -c config/.eslintrc . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.0.0",
+    "nodemon": "^1.18.3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "stage-3"
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./server"
+                ],
+                "alias": {
+                }
+            }
+        ]
+    ]
+}
